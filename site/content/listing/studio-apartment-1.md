@@ -5,6 +5,7 @@ square_feet: 575
 active: true
 bedrooms: 0
 bathrooms: 1
+image: /img/communityriver_losalisos_2019_drone0_sn.jpg
 ---
 #  **Lorem ipsum dolor sit amet, consectetur adipiscing elit.** 
 
