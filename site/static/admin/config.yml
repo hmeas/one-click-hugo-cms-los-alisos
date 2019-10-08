@@ -5,6 +5,20 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
+
+  - name: "listing"
+    label: "Listing"
+    folder: "site/content/listing"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "Square Feet", name: "square_feet", widget: "number"}
+      - {label: "Active", name: "active", widget: "boolean"}
+      - {label: "Bedrooms", name: "bedrooms", widget: "number"}
+      - {label: "Bathrooms", name: "bathrooms", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
