@@ -17,6 +17,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Active", name: "active", widget: "boolean"}
       - {label: "Bedrooms", name: "bedrooms", widget: "number"}
       - {label: "Bathrooms", name: "bathrooms", widget: "number"}
+      - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
