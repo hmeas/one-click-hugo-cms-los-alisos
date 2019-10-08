@@ -2,17 +2,42 @@
 
   <title>{{ .Title }} | {{ $.Site.Title }}</title>
 
-  {{ $stylesheet := .Site.Data.webpack.main }}
-  {{ with $stylesheet.css }}
-    <link href="{{ relURL . }}" rel="stylesheet">
-  {{ end }}
+  	<!-- Vendor CSS
+	============================================ -->
+	
+	<link rel="stylesheet" href="font/demo-files/demo.css">
+  	<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
+  	<link rel="stylesheet" href="plugins/revolution/css/settings.css">
+  	<link rel="stylesheet" href="plugins/revolution/css/layers.css">
+  	<link rel="stylesheet" href="plugins/revolution/css/navigation.css">
+
+  	<!-- CSS theme files
+	============================================ -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+	{{ $stylesheet := .Site.Data.webpack.main }}
+	{{ with $stylesheet.css }}
+	  <link href="{{ relURL . }}" rel="stylesheet">
+	{{ end }}
 
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  	<base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+	<!--<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">-->
+	<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+
+  	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -24,7 +49,7 @@
 
 	<!-- Open Graph -->
 	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="Kaldi | Great coffee with a conscience">
+	<meta property="og:title" content="Los Alisos Estates">
 	<meta property="og:url" content="/">
 	<meta property="og:image" content="/img/og-image.jpg">
 
@@ -32,3 +57,8 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {{ end }}
 </head>
+
+<script type="text/javascript">
+	console.log('debugging head.html');
+	console.log({{ .Site.Data }});
+</script>
