@@ -5,6 +5,7 @@ square_feet: 1300
 active: true
 bedrooms: 3
 bathrooms: 2
+image: /img/640x480.jpg
 ---
 #  **Maecenas accumsan mollis eros. Duis et tellus aliquam, tristique tortor non, tempor magna.** 
 
