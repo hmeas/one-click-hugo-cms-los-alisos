@@ -1,5 +1,5 @@
 ---
-title: Studio Apartment
+title: Studio Apartment B
 price: 995
 square_feet: 560
 active: true
