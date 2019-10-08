@@ -5,6 +5,7 @@ square_feet: 560
 active: true
 bedrooms: 0
 bathrooms: 1
+image: /img/ispdbj1f0ycwkb0000000000.jpg
 ---
 # **Lorem ipsum dolor sit amet, consectetur adipiscing elit.** 
 
