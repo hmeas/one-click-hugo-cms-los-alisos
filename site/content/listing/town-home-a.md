@@ -1,10 +1,11 @@
 ---
-title: Town Home A
-price: 2600
-square_feet: 1300
+title: Duplex (1 Bed)
+type: duplex
+price: 1500
+square_feet: 600
 active: true
-bedrooms: 3
-bathrooms: 2
+bedrooms: 1
+bathrooms: 1
 image: /img/640x480.jpg
 ---
 #  **Maecenas accumsan mollis eros. Duis et tellus aliquam, tristique tortor non, tempor magna.** 
