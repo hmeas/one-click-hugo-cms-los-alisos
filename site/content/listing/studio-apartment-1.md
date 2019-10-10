@@ -1,11 +1,12 @@
 ---
-title: Studio Apartment A
-price: 895
+title: Apartment
+type: studio
+price: 1200
 square_feet: 575
 active: true
 bedrooms: 0
 bathrooms: 1
-image: /img/communityriver_losalisos_2019_drone0_sn.jpg
+image: /img/269b30abb5c3547617c450ab1ca0babf.webp
 ---
 #  **Lorem ipsum dolor sit amet, consectetur adipiscing elit.** 
 
