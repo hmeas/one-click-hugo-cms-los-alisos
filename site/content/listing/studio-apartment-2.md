@@ -1,11 +1,12 @@
 ---
-title: Town Home B
+title: 2 Bedroom 2 Bath
+type: 2_bed
 price: 2200
-square_feet: 1100
+square_feet: 1060
 active: true
 bedrooms: 2
 bathrooms: 2
-image: /img/269b30abb5c3547617c450ab1ca0babf.webp
+image: /img/home3.jpg
 ---
 #  **Maecenas accumsan mollis eros. Duis et tellus aliquam, tristique tortor non, tempor magna.** 
 
