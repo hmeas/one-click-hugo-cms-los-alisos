@@ -12,6 +12,14 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options: 
+          - { label: "Studio", value: "studio" }
+          - { label: "1 Bed", value: "1_bed" }
+          - { label: "2 Beds", value: "2_bed" }
+          - { label: "3 Beds", value: "3_bed" }
       - {label: "Price", name: "price", widget: "number"}
       - {label: "Square Feet", name: "square_feet", widget: "number"}
       - {label: "Active", name: "active", widget: "boolean"}

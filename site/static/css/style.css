@@ -3917,3 +3917,9 @@ a:hover .tooltip{
   #footer.fixed-footer .social-icons > li > a:not(:hover){
     color: #fff;
   }
+
+  /* CUSTOM */
+
+  .text-uppercase {
+    text-transform: uppercase;
+  }
