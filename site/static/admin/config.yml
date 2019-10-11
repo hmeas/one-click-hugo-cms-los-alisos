@@ -6,6 +6,15 @@ public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
 
+  - name: "floor_plans"
+    label: "Floor Plans"
+    folder: "site/content/floor-plans"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
   - name: "listing"
     label: "Listing"
     folder: "site/content/listing"

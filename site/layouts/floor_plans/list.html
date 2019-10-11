@@ -40,7 +40,7 @@
 
 			<div class="mw7 center">
 			  <ul id="row-listing-group" class="flex-ns flex-wrap mhn1-ns pa3">
-			      {{ range (.Paginator 2).Pages.ByPublishDate.Reverse }}
+			      {{ range (.Paginator 8).Pages.ByPublishDate.Reverse }}
 			          <div class="row-listing">
 			            {{ .Render "listing_list"}}
 			          </div>
