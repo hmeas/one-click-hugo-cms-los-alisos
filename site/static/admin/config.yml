@@ -17,6 +17,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "select"
         options: 
           - { label: "Studio", value: "studio" }
+          - { label: "Duplex", value: "duplex" }
           - { label: "1 Bed", value: "1_bed" }
           - { label: "2 Beds", value: "2_bed" }
           - { label: "3 Beds", value: "3_bed" }

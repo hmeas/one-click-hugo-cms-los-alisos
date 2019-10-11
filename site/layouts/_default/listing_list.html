@@ -1,0 +1,16 @@
+<div class="row" style="border-bottom: 1px solid lightgray;padding:10px 0;margin-bottom: 10px">
+	<div class="col-lg-8">
+		<a href="{{ .RelPermalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
+			<h4 class="f3 b lh-title mb1 primary">{{ .Title }}</h4>
+			<p>
+				{{ .Params.Bedrooms }} Beds, {{ .Params.Bathrooms }} Bathrooms<br>
+				${{ .Params.Price }}<br>
+				{{ .Params.square_feet }} sqft
+			</p>
+			<p class="mb0">{{ .Description }}</p>
+		</a>
+	</div>
+	<div class="col-lg-4">
+		<img src="{{ .Params.Image }}" />
+	</div>
+</div>

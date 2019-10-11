@@ -24,18 +24,17 @@
 
 <div class="container container-extra">
 
-	<div class="row">
+	<div class="row" style="margin: 40px 0">
 	
-		<div class="col-lg-4">
-			
-		</div>	
+		<div class="col-lg-2">
+		</div>
 
-		<div class="col-lg-8">
+		<div class="col-lg-6">
 			<div class="mw7 center">
 			  <ul class="flex-ns flex-wrap mhn1-ns pa3">
 			      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
 			          <div class="w-50-ns ph1-ns flex">
-			            {{ .Render "li"}}
+			            {{ .Render "listing_list"}}
 			          </div>
 			      {{ end }}
 			  </ul>
@@ -43,9 +42,12 @@
 			</div>
 		</div>	
 
-	</div>
+		<div class="col-lg-3">
+			<br>
+			<img src="/img/contact_form.jpg">
+		</div>
 
-	
+	</div>
 
 </div>
 
