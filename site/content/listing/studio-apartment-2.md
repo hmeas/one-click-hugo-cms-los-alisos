@@ -1,12 +1,13 @@
 ---
 title: 2 Bedroom 2 Bath
+floor_plan_type: 2_bed
 type: 2_bed
 price: 2200
 square_feet: 1060
 active: true
 bedrooms: 2
 bathrooms: 2
-image: /img/home3.jpg
+image: /img/640x480.jpg
 ---
 #  **Maecenas accumsan mollis eros. Duis et tellus aliquam, tristique tortor non, tempor magna.** 
 
