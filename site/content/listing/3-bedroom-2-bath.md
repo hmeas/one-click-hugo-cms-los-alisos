@@ -1,5 +1,6 @@
 ---
 title: 3 Bedroom 2 Bath (B)
+floor_plan_type: 3_bed
 type: 3_bed
 price: 1995
 square_feet: 1050
