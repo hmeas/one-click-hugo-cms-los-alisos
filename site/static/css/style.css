@@ -5865,7 +5865,11 @@ a:hover .tooltip{
   margin-right: .5rem
 }
 
-.list-inline-item.active {
+.d-inline {
+  display: inline;
+}
+
+.list-inline-item.active, .list-inline .active {
   border-bottom: 2px solid red;
 }
 

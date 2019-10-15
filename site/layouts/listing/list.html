@@ -1,24 +1,7 @@
 {{ define "main" }}
 
-<div id="residences" class="media-holder" data-bg="img/pool.jpg">
+<div id="residences" style="height:90px;background: #202732">
 
-  <div class="container">
-
-    <div class="align-center">
-      <div class="content-element3">
-        
-        <h3 class="media-holder-title text-uppercase"><b>Availability And Listings</b></h3> 
-
-      </div>
-      <p class="text-uppercase">
-      	Your new home awaits
-      </p>
-    </div>
-
-  </div>
-
-  <div class="icon-scroll"></div>
-  
 </div>
 
 <div class="container container-extra">
@@ -30,17 +13,17 @@
 			<div class="border-b mb-2">
 				<div class="mb-2 text-uppercase"><b>Floor Plans & Pricing</b></div>
 				<ul class="list-inline mb-3">
-					<li class="list-inline-item pr-3 active">All</li>
-					<li class="list-inline-item pr-3">Studio</li>
-					<li class="list-inline-item pr-3">1 Bed</li>
-					<li class="list-inline-item pr-3">2 Beds</li>
-					<li>3 Beds</li>
+					<li class='list-inline-item pr-3 {{ if eq .Params.page_type "all" }}active{{ end }}'><a href="/listing">All</a></li>
+					<li class="list-inline-item pr-3"><a href="/listing/studio">Studio</a></li>
+					<li class="list-inline-item pr-3"><a href="/listing/1-bed">1 Bed</a></li>
+					<li class="list-inline-item pr-3"><a href="/listing/2-beds">2 Beds</a></li>
+					<li class='d-inline {{ if eq .Params.page_type "3_beds" }}active{{ end }}'><a href="/listing/3-beds">3 Beds</a></li>
 				</ul>
 			</div>
 
 			<div class="mw7 center">
 			  <ul id="row-listing-group" class="flex-ns flex-wrap mhn1-ns pa3">
-			      {{ range (.Paginator 2).Pages.ByPublishDate.Reverse }}
+			      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
 			          <div class="row-listing">
 			            {{ .Render "listing_list"}}
 			          </div>
@@ -89,8 +72,13 @@
 
 </div>
 
+<script type="text/javascript">
+	console.log(JSON.parse({{ .Params | jsonify }}));
+	console.log('-=-=-=-=-=-=-=-=-=-=-=-');
+</script>
+
 <!-- Debugging -->
-{{ range where .Site.Pages "Type" "3_bed" }}
+{{ range where .CurrentSection.Pages "Type" "3_bed" }}
 	<script type="text/javascript">
 		console.log({{ . }});
 	</script>
