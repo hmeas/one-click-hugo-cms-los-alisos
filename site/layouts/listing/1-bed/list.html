@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $paginator := .Paginate (where .Site.Pages "Params.type" "3_bed") }}
+{{ $paginator := .Paginate (where .Site.Pages "Params.type" "1_bed") }}
 
 <div id="residences" style="height:90px;background: #202732">
 
@@ -17,9 +17,9 @@
 				<ul class="list-inline mb-3">
 					<li class="list-inline-item pr-3"><a href="/listing">All</a></li>
 					<li class="list-inline-item pr-3"><a href="/listing/studio">Studio</a></li>
-					<li class="list-inline-item pr-3"><a href="/listing/1-bed">1 Bed</a></li>
+					<li class="list-inline-item pr-3 active"><a href="/listing/1-bed">1 Bed</a></li>
 					<li class="list-inline-item pr-3"><a href="/listing/2-beds">2 Beds</a></li>
-					<li class="d-inline active"><a href="/listing/3-beds">3 Beds</a></li>
+					<li class=""><a href="/listing/3-beds">3 Beds</a></li>
 				</ul>
 			</div>
 

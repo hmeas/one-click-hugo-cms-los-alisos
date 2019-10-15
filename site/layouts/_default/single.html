@@ -1,6 +1,33 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
-{{ .Content }}
+	<div id="residences" style="height:90px;background: #202732">
+
+	</div>
+
+	<div class="container container-extra mb-5">
+	  	<div class="mw6 center ph3 pv4">
+		    
+		    <div class="cms mw6">
+		      <div class="row">
+		      	<div class="col-lg-6">
+		      		<div class="mt-5">
+			      	{{ if .Params.image }}
+			      		<img src="{{ .Params.image }}" alt="{{ .Title }}" style="width:100%"/>
+			      	{{ end }}
+			      </div>
+			    </div>
+			    <div class="col-lg-6">
+			    	<h1 class="f2 lh-title b mb3 mt-4">{{.Title}}</h1>
+			    	<div class="mb5">
+			    		{{ .Content }}
+			    	</div>
+			    	<a class="btn btn-default mt-5" href="/listing">Back to Listings</a>
+			    </div>
+		      </div>
+
+		    </div>
+	  	</div>
+
+  	</div>
 
 {{ end }}

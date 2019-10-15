@@ -5919,12 +5919,32 @@ a:hover .tooltip{
     border: 1px solid lightgrey;
     padding: 15px;
     border-top: 4px solid #db2537;
-    box-shadow: 0px 3px 11px #B9B9B1;
+    box-shadow: 0px 3px 11px #dcdcda;
+}
+
+.contact-card .btn {
+  border: 1px solid #d3d3d3 !important;
 }
 
 .filter-card {
     border: 1px solid lightgrey;
     padding: 15px;
+}
+
+input:not([type="submit"]), textarea, .custom-select .select-title {
+    width: 100%;
+    color: #202732;
+    height: 44px;
+    padding: 0 20px;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #d3d3d3 !important;
+    background-color: transparent;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 44px;
+    box-sizing: border-box;
+    transition: box-shadow .35s ease, border-color .35s ease;
 }
 
 @media (max-width: 768px) {
