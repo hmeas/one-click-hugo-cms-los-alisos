@@ -14,6 +14,15 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Title"
         name: "title"
         widget: "string"
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options: 
+          - { label: "Studio", value: "studio" }
+          - { label: "Duplex", value: "duplex" }
+          - { label: "1 Bed", value: "1_bed" }
+          - { label: "2 Beds", value: "2_bed" }
+          - { label: "3 Beds", value: "3_bed" }
 
   # All Listings
   - name: "listing"
@@ -22,6 +31,12 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - label: "Floor Plan Type"
+        name: "floor_plan_type"
+        widget: "relation"
+        collection: "floor_plans"
+        searchFields: ["type"]
+        valueField: "type"
       - label: "Type"
         name: "type"
         widget: "select"
@@ -38,16 +53,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Bathrooms", name: "bathrooms", widget: "number"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-
-  - name: "3_beds_listings"
-    label: "3 Beds Listings"
-    widget: "relation"
-    collection: "listing"
-    searchFields: ["type"]
-    valueField: "3_bed"
-    folder: "site/content/listing/3-beds"
-    fields: 
-       - {label: "Title", name: "title", widget: "string"}
 
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
