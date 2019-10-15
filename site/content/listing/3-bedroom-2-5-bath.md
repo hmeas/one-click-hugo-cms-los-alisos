@@ -1,5 +1,5 @@
 ---
-title: 3 Bedroom 2.5 Bath
+title: 3 Bedroom 2.5 Bath (A)
 type: 3_bed
 price: 1995
 square_feet: 1050
