@@ -1,5 +1,6 @@
 ---
 title: 3 Bedroom 3 Bath
+floor_plan_type: 3_bed
 type: 3_bed
 price: 2600
 square_feet: 1300
