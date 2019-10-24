@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $paginator := .Paginate (where .Site.Pages "Params.type" "3_bed") }}
+{{ $paginator := .Paginate (where .Site.Pages "Params.type" "3_bed") 2 }}
 
 <div id="residences" style="height:90px;background: #202732">
 
@@ -25,7 +25,7 @@
 
 			<div class="mw7 center">
 			  <ul id="row-listing-group" class="flex-ns flex-wrap mhn1-ns pa3">
-			      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
+			      {{ range (.Paginator).Pages.ByPublishDate.Reverse }}
 			          <div class="row-listing">
 			            {{ .Render "listing_list"}}
 			          </div>
